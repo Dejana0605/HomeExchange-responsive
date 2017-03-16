@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #000; }
+
+nav {
+  background-color: #434b56; }
+  nav ul li {
+    text-align: center;
+    padding: 0.7em; }
+    nav ul li a {
+      text-decoration: none;
+      color: #fff; }
+      nav ul li a:hover {
+        color: #e42b15; }
+  nav ul .location {
+    background-color: #fd4935;
+    width: 100%;
+    display: inline-block; }
+    nav ul .location img {
+      width: 10%;
+      float: left;
+      padding: 0.5em 0; }
+    nav ul .location h2 {
+      width: 100%;
+      padding: 0.6em 0;
+      font-weight: normal;
+      color: #fff;
+      text-decoration: underline;
+      text-align: left; }
+
+.intro {
+  background-color: #000; }
+  .intro h1 {
+    color: #fff;
+    font-size: 2.7em;
+    text-align: center;
+    font-weight: normal; }
+  .intro p {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 1.5em; }
+
+.buttons {
+  text-align: center; }
+  .buttons button {
+    border: 1px solid #a6a6a6;
+    border-radius: 20px;
+    background: #fff;
+    padding: 0.75em;
+    margin: 0.75em;
+    color: #a6a6a6; }
+    .buttons button:hover {
+      color: #e42b15; }
+
+.menu {
+  background: #e1e8ea;
+  padding: 1.5em; }
+  .menu .image1 {
+    background-image: url("../slike/1.jpg");
+    height: 40vh;
+    background-size: cover;
+    margin: 1em auto; }
+  .menu .image2 {
+    background-image: url("../slike/2.jpg");
+    height: 40vh;
+    background-size: cover;
+    margin: 1em auto; }
+  .menu .image3 {
+    background-image: url("../slike/3.jpg");
+    height: 40vh;
+    background-size: cover;
+    margin: 1em auto; }
+  .menu .image4 {
+    background-image: url("../slike/4.jpg");
+    height: 40vh;
+    background-size: cover;
+    margin: 1em auto; }
+  .menu .image5 {
+    background-image: url("../slike/5.jpg");
+    height: 40vh;
+    background-size: cover;
+    margin: 1em auto; }
+  .menu .image6 {
+    background-image: url("../slike/6.jpg");
+    height: 40vh;
+    background-size: cover;
+    margin: 1em auto; }
+  .menu .transparent {
+    background: rgba(225, 232, 234, 0.7);
+    height: 15vh;
+    margin-top: 0; }
+    .menu .transparent .pad {
+      padding: 0.5em 0.5em 0; }
+    .menu .transparent p {
+      padding-left: 0.5em; }
+
+.pricing {
+  text-align: center; }
+  .pricing h2 {
+    text-transform: uppercase;
+    padding: 2em 0 1em; }
+  .pricing p {
+    padding: 0.5em;
+    color: #a6a6a6; }
+  .pricing button {
+    border: 1px solid #a6a6a6;
+    border-radius: 20px;
+    background: #fff;
+    padding: 0.75em;
+    margin: 0.75em;
+    color: #a6a6a6; }
+    .pricing button:hover {
+      color: #e42b15; }
+  .pricing .tables {
+    display: none; }
+
+.contact {
+  background-color: #e1e8ea;
+  text-align: center;
+  padding: 0.5em 0; }
+  .contact h2 {
+    text-transform: uppercase;
+    padding: 2em; }
+  .contact iframe {
+    width: 80%; }
+  .contact form {
+    width: 95%;
+    background: #fd4935;
+    padding: 0.75em;
+    margin: 0 auto; }
+    .contact form select, .contact form input, .contact form textarea {
+      width: 90%;
+      margin: 1em auto;
+      padding: 0.25em; }
+    .contact form textarea {
+      font-family: "Open Sans", sans-serif;
+      color: #a6a6a6;
+      resize: none; }
+
+footer {
+  background: #434b56;
+  padding: 0.5em 0 2em; }
+  footer p {
+    color: white;
+    text-align: center; }
+    footer p span {
+      color: #fd4935; }
+
+@media screen and (min-width: 600px) {
+  * {
+    margin: -2px; }
+
+  nav {
+    width: 100%;
+    display: inline-block; }
+    nav ul {
+      width: 100%; }
+      nav ul .location {
+        width: 30%;
+        float: left;
+        padding-top: 0;
+        margin: 0; }
+        nav ul .location img {
+          margin: 1em 0;
+          width: 2.75em; }
+      nav ul li {
+        display: inline-block;
+        float: left;
+        padding: 2.5em 1.5em 0; }
+
+  .intro {
+    background-image: url("../slike/intro.jpg");
+    height: 100vh;
+    background-size: cover;
+    padding-top: 25%; }
+    .intro .transbox {
+      background: rgba(102, 102, 102, 0.5);
+      width: 60%;
+      margin: auto; }
+      .intro .transbox p {
+        padding-bottom: 0; }
+
+  .buttons {
+    text-align: right;
+    width: 90%; }
+
+  .menu {
+    padding: 2em;
+    height: 185vh; }
+    .menu .nextto {
+      width: 90%;
+      margin-left: 10%; }
+      .menu .nextto .image1, .menu .nextto .image2, .menu .nextto .image3, .menu .nextto .image4, .menu .nextto .image5, .menu .nextto .image6 {
+        width: 40%;
+        float: left;
+        margin: 1em;
+        height: 50vh; }
+        .menu .nextto .image1 .transparent, .menu .nextto .image2 .transparent, .menu .nextto .image3 .transparent, .menu .nextto .image4 .transparent, .menu .nextto .image5 .transparent, .menu .nextto .image6 .transparent {
+          opacity: 0;
+          -webkit-transition: opacity 500ms;
+          -moz-transition: opacity 500ms;
+          -o-transition: opacity 500ms;
+          transition: opacity 500ms; }
+          .menu .nextto .image1 .transparent:hover, .menu .nextto .image2 .transparent:hover, .menu .nextto .image3 .transparent:hover, .menu .nextto .image4 .transparent:hover, .menu .nextto .image5 .transparent:hover, .menu .nextto .image6 .transparent:hover {
+            opacity: 1; }
+
+  .pricing button {
+    display: none; }
+  .pricing .tables {
+    display: block;
+    width: 90%;
+    margin: 3em auto; }
+    .pricing .tables table {
+      width: 90%;
+      margin: 0 auto;
+      border-collapse: collapse; }
+      .pricing .tables table .orange {
+        background: #fd4935;
+        border: 1px solid #b3b3b3;
+        padding: 0.3em; }
+        .pricing .tables table .orange td {
+          color: #f0f0f0; }
+      .pricing .tables table .color {
+        color: #b3b3b3;
+        border: 1px solid #b3b3b3;
+        padding: 0.3em; }
+      .pricing .tables table .blue {
+        background: #36414b;
+        border: 1px solid #b3b3b3;
+        padding: 0.3em; }
+      .pricing .tables table th {
+        color: #f0f0f0; }
+
+  .contact iframe {
+    width: 50%;
+    margin-bottom: 1.5em; }
+  .contact form {
+    margin-bottom: 2em; }
+    .contact form select {
+      width: 20%;
+      float: left;
+      margin-left: 5%; }
+    .contact form .name {
+      width: 65%; } }
+@media screen and (min-width: 1000px) {
+  .intro {
+    padding-top: 30%; }
+
+  .menu {
+    height: 120vh; }
+    .menu .nextto {
+      width: 80%; }
+      .menu .nextto .image1, .menu .nextto .image2, .menu .nextto .image3, .menu .nextto .image4, .menu .nextto .image5, .menu .nextto .image6 {
+        width: 20%;
+        height: 40vh; }
+
+  .pricing .tables {
+    width: 40%; }
+
+  .contact {
+    height: 100vh; }
+    .contact iframe {
+      width: 30%;
+      float: left;
+      margin: 0  10%; }
+    .contact form {
+      width: 40%;
+      float: right;
+      margin-right: 10%;
+      margin-top: 1em; } }
+
+/*# sourceMappingURL=design.css.map */

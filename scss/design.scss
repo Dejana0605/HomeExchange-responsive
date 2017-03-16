@@ -1,0 +1,202 @@
+@import "mixins";
+@import "vars";
+
+@include main;
+
+nav{
+	background-color: #434b56;
+	ul{
+		li{
+			text-align: center;
+			padding: 0.7em;
+
+			a{
+				text-decoration: none;
+				color: $color1;
+				@include hover-effect; 
+			}
+		}
+
+		.location{
+		background-color: $main_orange;
+		width: 100%;
+		display: inline-block;
+		
+			img{
+				width:10%;
+				float: left;
+				padding: 0.5em 0;
+			}
+			h2{
+				width: 100%;
+				padding: 0.6em 0;
+				font-weight: normal;
+				color: $color1;
+				text-decoration: underline;
+				text-align: left;
+			}
+
+		}
+		
+	}
+}
+.intro{
+	background-color: $main_text_color;
+
+		h1{
+			color: $color1;
+			font-size: 2.7em;
+			text-align: center;
+			font-weight: normal;
+
+		}
+		p{
+			color: $color1;
+			text-align: center;
+			padding-bottom: 1.5em;
+
+		}
+
+}
+.buttons{
+	text-align: center;
+	button{
+		border: 1px solid #a6a6a6;
+		border-radius: 20px;
+		background: #fff;
+		padding:0.75em;
+		margin: 0.75em;
+		color: #a6a6a6;
+		@include hover-effect;
+	}
+}
+.menu{
+	background: #e1e8ea;
+	padding: 1.5em;
+	.image1{
+		background-image: url("../slike/1.jpg");
+		height: 40vh;
+		background-size: cover;
+		margin: 1em auto;
+
+		}
+	.image2{
+		background-image: url("../slike/2.jpg");
+		height: 40vh;
+		background-size: cover;
+		margin: 1em auto;
+
+		}
+	.image3{
+		background-image: url("../slike/3.jpg");
+		height: 40vh;
+		background-size: cover;
+		margin: 1em auto;
+
+		}
+	.image4{
+		background-image: url("../slike/4.jpg");
+		height: 40vh;
+		background-size: cover;
+		margin: 1em auto;
+
+		}
+	.image5{
+		background-image: url("../slike/5.jpg");
+		height: 40vh;
+		background-size: cover;
+		margin: 1em auto;
+
+		}
+	.image6{
+		background-image: url("../slike/6.jpg");
+		height: 40vh;
+		background-size: cover;
+		margin: 1em auto;
+		}
+
+	.transparent{
+			background: rgba(225, 232, 234, 0.7) ;
+			height: 15vh;
+			margin-top: 0;
+			.pad{
+				padding: 0.5em 0.5em 0;
+			}
+			p{
+				padding-left: 0.5em;
+			}
+	}
+}
+.pricing{
+	text-align: center;
+	h2{
+		text-transform: uppercase;
+		padding: 2em 0 1em;
+	}
+	p{
+		padding: 0.5em;
+		color: #a6a6a6;
+	}
+	button{
+		border: 1px solid #a6a6a6;
+		border-radius: 20px;
+		background: #fff;
+		padding:0.75em;
+		margin: 0.75em;
+		color: #a6a6a6;
+		@include hover-effect;
+	}
+	.tables{
+		display: none;
+	}
+}
+.contact{
+	background-color: #e1e8ea;
+	text-align: center;
+	padding:0.5em 0;
+
+	h2{
+		text-transform: uppercase;
+		padding: 2em;
+	}
+	iframe{
+		width: 80%;
+	}
+	form{
+		width: 95%;
+		background: $main_orange;
+		padding: 0.75em;
+		margin: 0 auto;
+		select, input, textarea{
+			width: 90%;
+			margin: 1em auto;
+			padding:0.25em;
+			
+		}
+		textarea{
+			font-family: $main_font;
+			color: #a6a6a6;
+			resize: none;
+		}
+	}
+}
+footer{
+	background: #434b56;
+	padding: 0.5em 0 2em;
+
+	p{
+		color: white;
+		text-align: center;
+	
+		span{
+			color: $main_orange;
+		}
+	}
+}
+@media screen and(min-width: 600px){
+	@include medium;
+}
+
+@media screen and(min-width: 1000px){
+	@include large;
+}

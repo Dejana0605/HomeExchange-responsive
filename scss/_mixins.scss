@@ -1,0 +1,197 @@
+@mixin main{
+	*{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: $main_font;
+		color: $main_text_color;
+	}
+}
+
+@mixin clearfix{
+	&:before, &:after{
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+@mixin hover-effect{
+	&:hover{
+		color: $red_dark;
+	}
+}
+
+@mixin medium{
+	* {
+    margin: -2px;
+  	}
+
+	nav{
+		width: 100%;
+		display: inline-block;
+
+		ul{
+			width: 100%;
+
+			.location{
+			width: 30%;
+			float: left;
+			padding-top: 0;
+			margin: 0;
+
+				img{
+					margin:1em 0;
+					width: 2.75em;
+				}
+			}
+
+			li{
+				display: inline-block;
+				float: left;
+				padding: 2.5em 1.5em 0 ;
+
+			}
+
+		}
+	}
+	.intro{
+		background-image: url("../slike/intro.jpg");
+		height: 100vh;
+		background-size: cover;
+		padding-top: 25%;
+
+		.transbox{
+			background: rgba(102, 102, 102, 0.5);
+			width: 60%;
+			margin: auto;
+			p{
+				padding-bottom: 0;
+			}
+
+		}
+	}
+	.buttons{
+		text-align: right;
+		width: 90%;
+	}
+	.menu{
+		padding: 2em;
+		height: 185vh;
+		.nextto{ 
+			width: 90%;
+			margin-left: 10%;
+			.image1, .image2, .image3, .image4, .image5, .image6{
+				width: 40%;
+				float: left;
+				margin: 1em;
+				height: 50vh;
+
+				.transparent{
+					opacity: 0;
+					-webkit-transition: opacity 500ms;
+					-moz-transition: opacity 500ms;
+					-o-transition: opacity 500ms;
+					transition: opacity 500ms;
+					&:hover{
+						opacity:1;
+					}
+				}
+			}
+
+		
+		}
+	}
+	.pricing{
+		button{
+			display: none;
+		}
+		.tables{
+			display: block;
+			
+			width: 90%;
+			margin: 3em auto;
+			table{
+				width: 90%;
+				margin: 0 auto;
+				border-collapse: collapse;
+
+			.orange{
+				background:$main_orange;
+				border: 1px solid #b3b3b3;
+				padding: 0.3em;
+				td{
+					color: $grey_background;
+				}
+			}
+			.color{
+				color: #b3b3b3;
+				border: 1px solid #b3b3b3;
+				padding: 0.3em;
+			}
+			.blue{
+				background: #36414b;
+				border: 1px solid #b3b3b3;
+				padding: 0.3em;
+			}
+			th{	
+				color: $grey_background;
+					}
+				}
+			}
+		}
+	.contact{
+		iframe{
+			width: 50%;
+			margin-bottom: 1.5em;
+		}
+		form{
+			margin-bottom: 2em;
+			select{
+				width: 20%;
+				float: left;
+				margin-left: 5%;
+			}
+			.name{
+				width: 65%;
+			}
+		}
+	}
+}
+
+@mixin large{
+	.intro{
+		padding-top: 30%;
+	}
+	.menu{
+		height: 120vh;
+
+		.nextto{ 
+			width: 80%;
+			.image1, .image2, .image3, .image4, .image5, .image6{
+				width: 20%;
+				height: 40vh;
+			}
+		}
+	}
+	.pricing{
+		.tables{
+			width: 40%;
+		}
+	}
+	.contact{
+		height: 100vh;
+		iframe{
+			width: 30%;
+			float: left;
+			margin: 0  10%;
+		}
+		form{
+			width: 40%;
+			float: right;
+			margin-right:10%;
+			margin-top: 1em;
+		}
+	}
+}
